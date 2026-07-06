@@ -89,4 +89,32 @@ Complex::Complex(const char* str) {
 	// 이때 맨 앞의 부호는 생략 가능합니다. (생략시 + 라 가정)
 
 	int begin = 0, end = strlen(str);
+	real = 0.0;
+	img = 0.0;
+
+	// 먼저 가장 기준이 되는 'i' 의 위치를 찾는다.
+	int pos_i = -1;
+	for (int i = 0; i != end; i++) {
+		if (str[i] == 'i') {
+			pos_i = i;
+			break;
+		}
+	}
+
+	// 만일 'i' 가 없다면 이 수는 실수 뿐이다.
+	if (pos_i == -1)
+	{
+		real = get_number(str, begin, end - 1);
+		return;
+	}
+
+	// 만일 'i' 가 있다면, 실수부와 허수부를 나누어서 처리하면 된다.
+	real = get_number(str, begin, pos_i - 1);
+	img = get_number(str, pos_i + 1, end - 1);
+
+	if (pos_i >= 1 && str[pos_i - 1] == '-') img *= -1.0;
+}
+double Complex::get_number(const char* str, int from, int to) const {
+	bool minus = false;
+	if (from > to) return 0;
 }
