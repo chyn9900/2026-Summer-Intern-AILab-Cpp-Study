@@ -199,7 +199,10 @@
     <ClCompile Include="05-1-1 operator overloading.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="05-1-2 Complex Class.cpp" />
+    <ClCompile Include="05-1-2 Complex Class.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="05-2-1 friend.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\03. new delete.h" />
