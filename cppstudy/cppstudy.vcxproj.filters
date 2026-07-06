@@ -93,6 +93,9 @@
     <ClCompile Include="05-2-1 friend.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="05-2-2 Binary Operator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\03. new delete.h">
