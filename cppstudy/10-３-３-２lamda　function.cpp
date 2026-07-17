@@ -18,7 +18,7 @@ int main() {
 	vec.push_back(3);
 	vec.push_back(1);
 	vec.push_back(2);
-	vec.push_back(3);
+	vec.push_back(3);  
 	vec.push_back(4);
 
 	std::cout << "처음 vec 상태 ------" << std::endl;
