@@ -408,6 +408,15 @@
     <ClCompile Include="13-1-6-2 container_unique_ptr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="13-2 shared_ptr.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13-2-2 make_shared.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13-2-3 weak_ptr.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\03. new delete.h">
